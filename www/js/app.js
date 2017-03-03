@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.config', 'starter.directive', 'starter.filter', 'ngCordova', 'ionic-native-transitions'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.config', 'starter.directive', 'starter.filter', 'ngCordova'])
 
   .run(function ($ionicPlatform, $rootScope, $location, $ionicHistory, $cordovaToast, $cordovaNetwork, CommonService) {
     $ionicPlatform.ready(function () {
@@ -139,7 +139,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     //Toggle item style. Android defaults to small and iOS defaults to large.
     $ionicConfigProvider.form.toggle('large');
     //原生动画效果统一配置
-    $ionicNativeTransitionsProvider.setDefaultOptions({
+/*    $ionicNativeTransitionsProvider.setDefaultOptions({
       duration: 200, // in milliseconds (ms), default 400,
       slowdownfactor: 4, // overlap views (higher number is more) or no overlap (1), default 4
       iosdelay: -1, // ms to wait for the iOS webview to update before animation kicks in, default -1
@@ -157,7 +157,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     $ionicNativeTransitionsProvider.setDefaultBackTransition({
       type: 'slide',
       direction: 'right'
-    });
+    });*/
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
