@@ -17,7 +17,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           StatusBar.styleLightContent();
         }
         if ($ionicPlatform.is('android')) {
-          StatusBar.backgroundColorByHexString("#11c1f3");
+          StatusBar.backgroundColorByHexString("#1A73D6");
         }
 
       }
@@ -46,7 +46,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
             ionic.Platform.exitApp();
           } else {
             $rootScope.backButtonPressedOnceToExit = true;
-            $cordovaToast.showShortCenter('再按返回退出博绿网');
+            $cordovaToast.showShortCenter('再按返回退出松果微图');
             setTimeout(function () {
               $rootScope.backButtonPressedOnceToExit = false;
             }, 2000);
@@ -114,7 +114,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     });
   })
 
-  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider, $ionicNativeTransitionsProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
     /* 设置平台特性*/
     $ionicConfigProvider.platform.ios.tabs.style('standard');
     $ionicConfigProvider.platform.ios.tabs.position('bottom');
