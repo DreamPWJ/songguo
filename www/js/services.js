@@ -7,10 +7,10 @@ angular.module('starter.services', [])
           try {
             $cordovaToast.showLongCenter(msg);
           } catch (e) {
-            this.showAlert("标题", msg, stateurl);
+            this.showAlert("松果微图", msg, stateurl);
           }
         } else {
-          this.showAlert("标题", msg, stateurl);
+          this.showAlert("松果微图", msg, stateurl);
         }
       },
       showAlert: function (title, template, stateurl) {
@@ -307,7 +307,7 @@ angular.module('starter.services', [])
           if (flag) {
             $state.go('login');
           } else {
-            this.showConfirm('标题', '温馨提示:此功能需要登录才能使用,请先登录', '登录', '关闭', 'login');
+            this.showConfirm('松果微图', '温馨提示:此功能需要登录才能使用,请先登录', '登录', '关闭', 'login');
             return;
           }
           return false;
@@ -350,14 +350,14 @@ angular.module('starter.services', [])
 
     }
   })
-  .service('MainService', function ($q, $http, BooLv) { //主页服务定义
+  .service('MainService', function ($q, $http, SongGuo) { //主页服务定义
     return {
       authLogin: function () {
         var deferred = $q.defer();// 声明延后执行，表示要去监控后面的执行
         var promise = deferred.promise
         promise = $http({
           method: 'POST',
-          url: BooLv.api + "/Auth/Login",
+          url: SongGuo.api + "/Auth/Login",
           data: data
         }).success(function (data) {
           deferred.resolve(data);// 声明执行成功，即http请求数据成功，可以返回数据了
@@ -368,14 +368,14 @@ angular.module('starter.services', [])
       }
     }
   })
-  .service('AccountService', function ($q, $http, BooLv, $cordovaFileTransfer, $state, $cordovaToast, $interval, $timeout, $ionicPopup, $ionicLoading, $cordovaFile, $cordovaFileOpener2) {
+  .service('AccountService', function ($q, $http, SongGuo, $cordovaFileTransfer, $state, $cordovaToast, $interval, $timeout, $ionicPopup, $ionicLoading, $cordovaFile, $cordovaFileOpener2) {
     return {
       login: function (datas) { //登录
         var deferred = $q.defer();// 声明延后执行，表示要去监控后面的执行
         var promise = deferred.promise
         promise = $http({
           method: 'POST',
-          url: BooLv.api + "/user/login",
+          url: SongGuo.api + "/user/login",
           data: datas
         }).success(function (data) {
           deferred.resolve(data);// 声明执行成功，即http请求数据成功，可以返回数据了
@@ -389,7 +389,7 @@ angular.module('starter.services', [])
         //图片上传upImage（图片路径）
         //http://ngcordova.com/docs/plugins/fileTransfer/  资料地址
 
-        var url = BooLv.api + "/UploadImg/Add/" + params.filenames;//Filenames:上传附件根目录文件夹名称发货，签收，验货统一用Receipt这个名称  会员头像用User这个名称
+        var url = SongGuo.api + "/UploadImg/Add/" + params.filenames;//Filenames:上传附件根目录文件夹名称发货，签收，验货统一用Receipt这个名称  会员头像用User这个名称
         var options = {
           fileKey: "file",//相当于form表单项的name属性
           fileName: imageUrl.substr(imageUrl.lastIndexOf('/') + 1),
@@ -428,7 +428,7 @@ angular.module('starter.services', [])
             });
             var url = appurl; //可以从服务端获取更新APP的路径
             try {
-              var targetPath = cordova.file.externalRootDirectory + "/boolv/boolv.apk"; //APP下载存放的路径，可以使用cordova file插件进行相关配置
+              var targetPath = cordova.file.externalRootDirectory + "/SongGuo/SongGuo.apk"; //APP下载存放的路径，可以使用cordova file插件进行相关配置
             } catch (e) {
               $ionicLoading.hide();
             }
@@ -467,7 +467,7 @@ angular.module('starter.services', [])
       }
     }
   })
-  .service('WeiXinService', function ($q, $http, BooLv) { //微信 JS SDK 接口服务定义
+  .service('WeiXinService', function ($q, $http, SongGuo) { //微信 JS SDK 接口服务定义
     return {
       //获取微信签名
       getWCSignature: function (params) {
@@ -475,7 +475,7 @@ angular.module('starter.services', [])
         var promise = deferred.promise
         promise = $http({
           method: 'POST',
-          url: BooLv.api + "/wc/signature",
+          url: SongGuo.api + "/wc/signature",
           params: params
         }).success(function (data) {
           deferred.resolve(data);// 声明执行成功，即http请求数据成功，可以返回数据了
@@ -490,7 +490,7 @@ angular.module('starter.services', [])
         var promise = deferred.promise
         promise = $http({
           method: 'GET',
-          url: BooLv.api + "/wc/media",
+          url: SongGuo.api + "/wc/media",
           params: params
         }).success(function (data) {
           deferred.resolve(data);// 声明执行成功，即http请求数据成功，可以返回数据了

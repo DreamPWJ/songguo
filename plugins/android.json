@@ -36,6 +36,18 @@
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.ionicframework.songguo627921"
+        },
+        "cordova-plugin-imagepicker": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
         }
     },
     "dependent_plugins": {
