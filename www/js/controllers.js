@@ -36,4 +36,9 @@ angular.module('starter.controllers', [])
     $scope.settings = {
       enableFriends: true
     };
+  })
+
+  //加好友专区
+  .controller('AddBuddyCtrl', function ($scope, CommonService) {
+
   });

@@ -121,8 +121,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     $ionicConfigProvider.platform.android.tabs.style('standard');
     $ionicConfigProvider.platform.android.tabs.position('bottom');
 
-    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
-    $ionicConfigProvider.platform.android.navBar.alignTitle('center');
+/*    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+    $ionicConfigProvider.platform.android.navBar.alignTitle('center');*/
 
     $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-left');
     $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-ios-arrow-left');
@@ -204,6 +204,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         url: '/login',
         templateUrl: 'templates/login.html',
         controller: 'LoginCtrl'
+      })
+
+      //加好友专区
+      .state('addbuddy', {
+        url: '/addbuddy',
+        templateUrl: 'templates/addbuddy.html',
+        controller: 'AddBuddyCtrl'
       })
 
     // if none of the above states are matched, use this as the fallback
