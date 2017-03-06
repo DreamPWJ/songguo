@@ -1,18 +1,41 @@
 <ion-view>
-<!--  <ion-nav-buttons side="left">
-    <a class="button icon ion-android-person no-border" nav-direction=forward native-ui-sref="login"
-       native-options="{type: 'slide',direction: 'left'}"></a>
-  </ion-nav-buttons>-->
+  <!--  <ion-nav-buttons side="left">
+      <a class="button icon ion-android-person no-border" nav-direction=forward native-ui-sref="login"
+         native-options="{type: 'slide',direction: 'left'}"></a>
+    </ion-nav-buttons>-->
   <ion-nav-title>
     <h1 class="title "> 松果微图</h1>
   </ion-nav-title>
-<!--  <ion-nav-buttons side="right">
-    <button class="button icon ion-plus no-border" ng-click="uploadActionSheet()"></button>
-  </ion-nav-buttons>-->
+  <!--  <ion-nav-buttons side="right">
+      <button class="button icon ion-plus no-border" ng-click="uploadActionSheet()"></button>
+    </ion-nav-buttons>-->
 
   <ion-content overflow-scroll="false" class="stable-bg" has-bouncing="true">
-
-
+    <div id="main-icon" class="row light-bg row-no-padding row-center text-center">
+      <div class="col-66">
+        <div class="row ">
+          <div class="col border-rb">
+            <i ui-sref="tab.account" nav-direction=forward class="iconfont icon-weixin balanced"></i>
+            <p class="padding-top ">微果</p>
+          </div>
+          <div class="col border-rb">
+            <i ui-sref="tab.account" nav-direction=forward class="iconfont icon-zhifubao calm"></i>
+            <p class="padding-top ">宝果</p></div>
+        </div>
+        <div class="row">
+          <div class="col border-r">
+            <i ui-sref="tab.account" nav-direction=forward class="iconfont icon-jiafen assertive"></i>
+            <p class="padding-top ">加粉</p></div>
+          <div class="col border-r">
+            <i ui-sref="tab.account" nav-direction=forward class="iconfont icon-dingwei calm"></i>
+            <p class="padding-top ">虚拟定位</p></div>
+        </div>
+      </div>
+      <div class="col"><i ui-sref="tab.account" nav-direction=forward class="iconfont icon-shequ energized"></i>
+        <p class="padding-top ">微社区</p></div>
+    </div>
+    <p></p>
+    <img ng-src="" alt="">
   </ion-content>
 </ion-view>
 

@@ -1,3 +1,31 @@
+
+#main-icon .col-66 .col {
+  padding-top: 1.6rem;
+  height: 6rem;
+}
+
+#main-icon .col-66 .col > i{
+  font-size: 2.6rem;
+
+}
+
+#main-icon > .col > i {
+  font-size: 2.6rem;
+}
+
+.border-rb {
+  border-right: 1px solid rgba(221, 221, 221, 0.3);
+  border-bottom: 1px solid rgba(221, 221, 221, 0.3);
+}
+
+.border-r {
+  border-right: 1px solid rgba(221, 221, 221, 0.3);
+}
+
+.border-b {
+  border-bottom: 1px solid rgba(221, 221, 221, 0.3);
+}
+
 .tool-tip {
   position: fixed;
   z-index: 10000;
@@ -12,7 +40,7 @@
 
 }
 
-.tool-tip-message{
+.tool-tip-message {
   background-color: #ef473a;
   color: #ffffff;
   text-align: center;
@@ -20,8 +48,8 @@
   border-radius: 0.8rem;
 }
 
-.tool-tip-message-success{
-  background-color: #33cd5f ;
+.tool-tip-message-success {
+  background-color: #33cd5f;
   color: #ffffff;
   text-align: center;
   padding: 0.3rem 1.2rem;
