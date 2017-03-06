@@ -48,11 +48,20 @@
         },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.ionicframework.hybridapp"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
+        },
+        "cordova-plugin-file-opener2": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-compat": {
             "PACKAGE_NAME": "com.ionicframework.songguo627921"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.hybridapp"
         }
     }
 }
