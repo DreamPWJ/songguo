@@ -1,16 +1,28 @@
 
 #main-icon .col-66 .col {
-  padding-top: 1.6rem;
-  height: 6rem;
+  padding-top: 2.5rem;
+  height: 6.6rem;
 }
 
-#main-icon .col-66 .col > i{
-  font-size: 2.6rem;
+#main-icon .col-66 .col > i {
+  font-size: 2.8rem;
 
 }
 
 #main-icon > .col > i {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
+}
+
+.main-banner {
+  height: 8rem;
+}
+
+.shuiyin-btn {
+  display: block;
+  margin: -4.2rem auto 0;
+  width: 50%;
+  height: 3.6rem;
+
 }
 
 .border-rb {
