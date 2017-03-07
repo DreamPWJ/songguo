@@ -25,6 +25,11 @@
 
 }
 
+#addbuddy .item button{
+  min-height: 33px!important;
+  line-height: 33px!important;
+}
+
 .border-rb {
   border-right: 1px solid rgba(221, 221, 221, 0.3);
   border-bottom: 1px solid rgba(221, 221, 221, 0.3);
