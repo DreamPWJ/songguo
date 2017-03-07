@@ -6,3 +6,7 @@
   color: #ffffff;
   background-color: #393A3F!important;
 }
+
+.tabs-color-active-balanced .iconfont{
+  padding-top: 0.6rem;
+}
