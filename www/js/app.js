@@ -17,7 +17,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           StatusBar.styleLightContent();
         }
         if ($ionicPlatform.is('android')) {
-          StatusBar.backgroundColorByHexString("#1A73D6");
+          StatusBar.backgroundColorByHexString("#1B82D1");
         }
 
       }
@@ -75,7 +75,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           CommonService.platformPrompt("网络异常 无法连接服务器", 'close');
         })
         //添加JS 屏幕监听事件 禁止APP 横屏
-        if(screenOrientation){
+        if (screenOrientation) {
           screenOrientation.setOrientation('portrait');
         }
 
@@ -121,8 +121,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     $ionicConfigProvider.platform.android.tabs.style('standard');
     $ionicConfigProvider.platform.android.tabs.position('bottom');
 
-/*    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
-    $ionicConfigProvider.platform.android.navBar.alignTitle('center');*/
+    /*    $ionicConfigProvider.platform.ios.navBar.alignTitle('center');
+     $ionicConfigProvider.platform.android.navBar.alignTitle('center');*/
 
     $ionicConfigProvider.platform.ios.backButton.previousTitleText('').icon('ion-ios-arrow-left');
     $ionicConfigProvider.platform.android.backButton.previousTitleText('').icon('ion-ios-arrow-left');
@@ -139,25 +139,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     //Toggle item style. Android defaults to small and iOS defaults to large.
     $ionicConfigProvider.form.toggle('large');
     //原生动画效果统一配置
-/*    $ionicNativeTransitionsProvider.setDefaultOptions({
-      duration: 200, // in milliseconds (ms), default 400,
-      slowdownfactor: 4, // overlap views (higher number is more) or no overlap (1), default 4
-      iosdelay: -1, // ms to wait for the iOS webview to update before animation kicks in, default -1
-      androiddelay: -1, // same as above but for Android, default -1
-      winphonedelay: -1, // same as above but for Windows Phone, default -1,
-      fixedPixelsTop: 0, // the number of pixels of your fixed header, default 0 (iOS and Android)
-      fixedPixelsBottom: 0, // the number of pixels of your fixed footer (f.i. a tab bar), default 0 (iOS and Android)
-      triggerTransitionEvent: '$ionicView.afterEnter', // internal ionic-native-transitions option
-      backInOppositeDirection: false // Takes over default back transition and state back transition to use the opposite direction transition to go back
-    });
-    $ionicNativeTransitionsProvider.setDefaultTransition({
-      type: 'slide',
-      direction: 'left'
-    });
-    $ionicNativeTransitionsProvider.setDefaultBackTransition({
-      type: 'slide',
-      direction: 'right'
-    });*/
+    /*    $ionicNativeTransitionsProvider.setDefaultOptions({
+     duration: 200, // in milliseconds (ms), default 400,
+     slowdownfactor: 4, // overlap views (higher number is more) or no overlap (1), default 4
+     iosdelay: -1, // ms to wait for the iOS webview to update before animation kicks in, default -1
+     androiddelay: -1, // same as above but for Android, default -1
+     winphonedelay: -1, // same as above but for Windows Phone, default -1,
+     fixedPixelsTop: 0, // the number of pixels of your fixed header, default 0 (iOS and Android)
+     fixedPixelsBottom: 0, // the number of pixels of your fixed footer (f.i. a tab bar), default 0 (iOS and Android)
+     triggerTransitionEvent: '$ionicView.afterEnter', // internal ionic-native-transitions option
+     backInOppositeDirection: false // Takes over default back transition and state back transition to use the opposite direction transition to go back
+     });
+     $ionicNativeTransitionsProvider.setDefaultTransition({
+     type: 'slide',
+     direction: 'left'
+     });
+     $ionicNativeTransitionsProvider.setDefaultBackTransition({
+     type: 'slide',
+     direction: 'right'
+     });*/
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
@@ -171,7 +171,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         abstract: true,
         templateUrl: 'templates/tabs.html'
       })
-
+      .state('wxtab', { //微信tabs
+        url: '/wxtab',
+        abstract: true,
+        templateUrl: 'templates/weixin/wxtabs.html'
+      })
       // Each tab has its own nav history stack:
 
       //APP首页面
@@ -213,6 +217,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         controller: 'AddBuddyCtrl'
       })
 
+      //-------------------------------------微信路由开始-----------------------------------------
+      //APP微信首页面
+      .state('wxtab.weixin', {
+        url: '/weixin',
+        views: {
+          'tab-weixin': {
+            templateUrl: 'templates/weixin/weixin.html',
+            controller: 'WeiXinCtrl'
+          }
+        }
+      })
+    // -------------------------------------微信路由结束-----------------------------------------
+
+    //-------------------------------------支付宝路由开始-----------------------------------------
+
+    // -------------------------------------支付宝路由结束-----------------------------------------
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/main');
 

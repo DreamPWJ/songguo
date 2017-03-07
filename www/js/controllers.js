@@ -41,4 +41,12 @@ angular.module('starter.controllers', [])
   //加好友专区
   .controller('AddBuddyCtrl', function ($scope, CommonService) {
 
-  });
+  })
+
+
+  //-------------------------------------微信控制器开始-----------------------------------------
+  //APP微信首页面
+  .controller('WeiXinCtrl', function ($scope, CommonService) {
+
+  })
+//-------------------------------------微信控制器结束-----------------------------------------
