@@ -1,25 +1,37 @@
-.weixin{
-  color: #393A3F!important;
+.weixin {
+  color: #393A3F !important;
 }
 
-.weixin-bg{
-  color: #ffffff!important;
-  background-color: #393A3F!important;
+.weixin-bg {
+  color: #ffffff !important;
+  background-color: #393A3F !important;
 }
 
-.tabs-color-active-balanced .iconfont{
+.tabs-color-active-balanced .iconfont {
   padding-top: 0.6rem;
 }
 
-.platform-ios .popover ,.platform-android .popover{
-  background-color: #393A3F!important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4)!important;
+.platform-ios .popover, .platform-android .popover {
+  background-color: #393A3F !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4) !important;
 }
-.platform-ios .popover-arrow:after{
-  background-color: #393A3F!important;
+
+.platform-ios .popover-arrow:after {
+  background-color: #393A3F !important;
 }
-.platform-ios .weixin-main-popover .item,.platform-android .weixin-main-popover .item{
-  color: #ffffff!important;
-  background-color: #393A3F!important;
-  border: 1px solid rgba(0, 0, 0, 0.4)!important;
+
+.platform-ios .weixin-main-popover .item, .platform-android .weixin-main-popover .item {
+  color: #ffffff !important;
+  background-color: #393A3F !important;
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+.wx-header-right:before {
+  margin-right: 0.5rem;
+  font-size: 1.6rem !important;
+}
+
+#weixin .item p {
+  font-size: 0.8rem;
+  color: #9A9A9A;
 }
