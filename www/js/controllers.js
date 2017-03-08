@@ -9,6 +9,7 @@ angular.module('starter.controllers', [])
 
   //APP首页面
   .controller('MainCtrl', function ($scope, $rootScope, CommonService, $ionicHistory) {
+
     $scope.imgsPicAddr = [];//图片信息数组
     $scope.imageList = [];  //上传图片数组集合
     $scope.uploadActionSheet = function () {
@@ -17,6 +18,7 @@ angular.module('starter.controllers', [])
     //在首页中清除导航历史退栈
     $scope.$on('$ionicView.afterEnter', function () {
       $ionicHistory.clearHistory();
+        StatusBar.backgroundColorByHexString("#1B82D1");
     })
   })
 
@@ -47,6 +49,9 @@ angular.module('starter.controllers', [])
   //-------------------------------------微信控制器开始-----------------------------------------
   //APP微信首页面
   .controller('WeiXinCtrl', function ($scope, CommonService) {
-
+    $scope.$on('$ionicView.afterEnter', function () {
+      StatusBar.backgroundColorByHexString("#393A3F");
+    })
+    CommonService.ionicPopover($scope, 'wxmain-popover.html');
   })
 //-------------------------------------微信控制器结束-----------------------------------------
