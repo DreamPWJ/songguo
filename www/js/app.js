@@ -238,6 +238,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           }
         }
       })
+
       //APP微信发现主页面
       .state('wxtab.find', {
         url: '/find',
@@ -287,11 +288,32 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         templateUrl: 'templates/weixin/account/personalinfo.html',
         controller: 'PersonalInfoCtrl'
       })
+
       //APP微信添加聊天对象
       .state('addchat', {
         url: '/addchat',
         templateUrl: 'templates/weixin/addchat.html',
         controller: 'AddChatCtrl'
+      })
+
+      //APP微信新的朋友
+      .state('addfriend', {
+        url: '/addfriend',
+        templateUrl: 'templates/weixin/addfriend/addfriend.html',
+        controller: 'AddFriendCtrl'
+      })
+      //APP微信零钱
+      .state('loosechange', {
+        url: '/loosechange',
+        templateUrl: 'templates/weixin/account/loosechange.html',
+        controller: 'LooseChangeCtrl'
+      })
+
+      //APP微信充值
+      .state('recharge', {
+        url: '/recharge',
+        templateUrl: 'templates/weixin/account/recharge.html',
+        controller: 'RechargeCtrl'
       })
 // -------------------------------------微信路由结束-----------------------------------------
 

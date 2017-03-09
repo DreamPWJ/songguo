@@ -84,7 +84,7 @@ angular.module('starter.controllers', [])
 
   })
   //APP微信添加聊天对象
-  .controller('AddChatCtrl', function ($scope, CommonService,$ionicSlideBoxDelegate) {
+  .controller('AddChatCtrl', function ($scope, CommonService, $ionicSlideBoxDelegate) {
     $scope.tabIndex = 0;//当前tabs页
     $scope.slideChanged = function (index) {
       $scope.tabIndex = index;
@@ -95,5 +95,58 @@ angular.module('starter.controllers', [])
       //滑动的索引和速度
       $ionicSlideBoxDelegate.$getByHandle("slidebox-addchatlist").slide(index)
     }
+  })
+  //APP微信新的朋友
+  .controller('AddFriendCtrl', function ($scope, CommonService,$ionicActionSheet) {
+    $scope.addFriend = function () {//添加朋友
+      $ionicActionSheet.show({
+        cssClass: '',
+        titleText: '',
+        buttons: [
+          {text: '刷新类别'},
+          {text: '清空列表'},
+          {text: '继续添加'},
+        ],
+        cancelText: '取消',
+        cancel: function () {
+          return true;
+        },
+        buttonClicked: function (index) {
+          switch (index) {
+            case 0:
+            function a() {
+
+            }
+
+              break;
+            case 1:
+            function b() {
+
+            }
+
+              break;
+            case 2:
+            function c() {
+
+            }
+
+              break;
+            default:
+              break;
+          }
+          return true;
+        }
+      });
+    }
+  })
+
+  //APP微信零钱
+  .controller('LooseChangeCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP微信充值
+  .controller('RechargeCtrl', function ($scope, CommonService) {
+
   })
 //-------------------------------------微信控制器结束-----------------------------------------

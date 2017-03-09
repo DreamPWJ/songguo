@@ -1,0 +1,33 @@
+<ion-view title="新的朋友">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button button-clear" ng-click="addFriend()">添加朋友</button>
+
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content overflow-scroll="false" class="stable-bg" id="addfriend" has-bouncing="true">
+    <p></p>
+    <label class="item-input-wrapper light-bg " >
+      <i class="icon ion-android-search  placeholder-icon"></i>
+      <input type="search" class="search padding-left"  placeholder="微信号/QQ号/手机号" ng-model="searchcontent"/>
+    </label>
+    <ion-list>
+      <ion-item class="item-divider">
+        新的朋友
+      </ion-item>
+      <a ng-href="" nav-direction=forward class="item item-avatar item-button-right">
+        <img ng-src="img/weixin/qian.jpg" alt="">
+        <h2>笑笑 </h2>
+        <p>我是笑笑</p>
+        <button class="button button-balanced">接受</button>
+      </a>
+
+    </ion-list>
+  </ion-content>
+
+</ion-view>
+

@@ -18,20 +18,123 @@
                  id="addchatlist">
     <ion-slide>
       <ion-content overflow-scroll="false" class="has-tabs-top stable-bg" has-bouncing="true">
-
-        1
+        <p></p>
+        <ion-list>
+          <ion-item class="item-icon-right">
+            <h2>朋友头像</h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-input">
+            <span class="input-label">朋友昵称</span>
+            <input type="text" class="text-right" placeholder="请输入">
+          </ion-item>
+        </ion-list>
+        <p></p>
+        <ion-list>
+          <ion-item class="item-icon-right">
+            <h2>消息内容</h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-icon-right">
+            <h2>消息发送时间 <span class="item-note">2017-03-24 17:29:21</span></h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item>
+            <h2>未读消息数量 <span class="item-note">0</span></h2>
+          </ion-item>
+        </ion-list>
+        <p></p>
+        <ion-list>
+          <ion-toggle ng-model="stickFriend" toggle-class="toggle-balanced">置顶聊天</ion-toggle>
+        </ion-list>
+        <p></p>
+        <button class="button button-light calm button-full">自动填写信息</button>
+        <div class="padding">
+          <button ng-disabled="true" class="button button-balanced button-full">完成</button>
+        </div>
       </ion-content>
     </ion-slide>
 
     <ion-slide>
       <ion-content overflow-scroll="false" class="has-tabs-top stable-bg" has-bouncing="true">
-        2
+        <p></p>
+        <ion-list>
+          <ion-item class="item-icon-right">
+            <h2>陌生人头像</h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-input">
+            <span class="input-label">陌生人昵称</span>
+            <input type="text" class="text-right" placeholder="请输入">
+          </ion-item>
+        </ion-list>
+        <p></p>
+        <ion-list>
 
+          <ion-item class="item-input">
+            <span class="input-label">打招呼消息1</span>
+            <input type="text" class="text-right" placeholder="咨询一下产品">
+          </ion-item>
+        </ion-list>
+        <p></p>
+        <button class="button button-light calm button-full">新增打招呼消息</button>
+        <p></p>
+        <ion-list>
+          <ion-item class="item-icon-right">
+            <h2>打招呼时间 <span class="item-note">2017-03-24 17:29:21</span></h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-icon-right">
+            <h2>通过好友时间 </h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-toggle ng-model="stickStranger" toggle-class="toggle-balanced">置顶聊天</ion-toggle>
+        </ion-list>
+        <p></p>
+        <button class="button button-light calm button-full">自动填写信息</button>
+        <div class="padding">
+          <button ng-disabled="true" class="button button-balanced button-full">完成</button>
+        </div>
       </ion-content>
     </ion-slide>
     <ion-slide>
       <ion-content overflow-scroll="false" class="has-tabs-top stable-bg" has-bouncing="true">
-        3
+        <p></p>
+        <ion-list>
+          <ion-item class="item-icon-right">
+            <h2>群聊头像</h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-input">
+            <span class="input-label">群聊昵称</span>
+            <input type="text" class="text-right" placeholder="请输入">
+          </ion-item>
+        </ion-list>
+        <p></p>
+        <ion-list>
+          <ion-item class="item-icon-right">
+            <h2>消息内容</h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-icon-right">
+            <h2>消息发送时间 <span class="item-note">2017-03-24 17:29:21</span></h2>
+            <i class="icon ion-ios-arrow-right"></i>
+          </ion-item>
+          <ion-item class="item-input">
+            <span class="input-label">未读消息数量</span>
+            <input type="text" class="text-right" placeholder="请输入">
+          </ion-item>
+        </ion-list>
+        <p></p>
+        <ion-list>
+          <ion-toggle ng-model="stickGroupchat" toggle-class="toggle-balanced">置顶聊天</ion-toggle>
+          <ion-toggle ng-model="noDisturbing" toggle-class="toggle-balanced">消息免打扰</ion-toggle>
+
+        </ion-list>
+        <p></p>
+        <div class="padding">
+          <button ng-disabled="true" class="button button-balanced button-full">完成</button>
+        </div>
       </ion-content>
     </ion-slide>
   </ion-slide-box>
