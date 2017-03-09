@@ -1,0 +1,19 @@
+<ion-view title="微信">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-buttons side="right">
+      <button class="button no-border icon ion-ios-search-strong  wx-header-right" ng-click=""></button>
+      <button class="button button-clear icon ion-android-add wx-header-right" ng-click="openPopover($event)"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content overflow-scroll="false" class="stable-bg" id="find" has-bouncing="true">
+    <ion-list>
+      <a ng-href="#/chatdetails" nav-direction=forward class="item item-avatar">
+        <img ng-src="img/weixin/qian.jpg" alt="">
+        <h2>发现 <span class="item-note">13:06</span></h2>
+      </a>
+    </ion-list>
+  </ion-content>
+
+</ion-view>
+

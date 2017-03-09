@@ -228,12 +228,58 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           }
         }
       })
-    // -------------------------------------微信路由结束-----------------------------------------
+      //APP微信通讯录主页面
+      .state('wxtab.addressbook', {
+        url: '/addressbook',
+        views: {
+          'tab-addressbook': {
+            templateUrl: 'templates/weixin/addressbook.html',
+            controller: 'AddressBookCtrl'
+          }
+        }
+      })
+      //APP微信发现主页面
+      .state('wxtab.find', {
+        url: '/find',
+        views: {
+          'tab-find': {
+            templateUrl: 'templates/weixin/find.html',
+            controller: 'FindCtrl'
+          }
+        }
+      })
 
-    //-------------------------------------支付宝路由开始-----------------------------------------
+      //APP微信我的主页面
+      .state('wxtab.account', {
+        url: '/account',
+        views: {
+          'tab-account': {
+            templateUrl: 'templates/weixin/account.html',
+            controller: 'WXAccountCtrl'
+          }
+        }
+      })
+      //APP微信聊天界面
+      .state('chatdetails', {
+        url: '/chatdetails',
+        templateUrl: 'templates/weixin/chat/chatdetails.html',
+        controller: 'ChatDetailsCtrl'
+      })
 
-    // -------------------------------------支付宝路由结束-----------------------------------------
-    // if none of the above states are matched, use this as the fallback
+
+      //APP微信聊天属性设置
+      .state('chatsetting', {
+        url: '/chatsetting',
+        templateUrl: 'templates/weixin/chat/chatsetting.html',
+        controller: 'ChatSettingCtrl'
+      })
+// -------------------------------------微信路由结束-----------------------------------------
+
+//-------------------------------------支付宝路由开始-----------------------------------------
+
+// -------------------------------------支付宝路由结束-----------------------------------------
+// if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/main');
 
-  });
+  })
+;

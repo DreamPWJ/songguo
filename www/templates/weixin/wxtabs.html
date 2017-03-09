@@ -6,23 +6,24 @@ navigation history that also transitions its views in and out.
 <ion-tabs class="tabs-icon-top tabs-color-active-balanced tabs-light">
 
   <!-- 主页 Tab -->
-  <ion-tab  title="微信"  icon-off="ion-ios-chatbubble-outline" icon-on="ion-ios-chatbubble"  badge-style="badge-assertive"  badge="2" href="#/wxtab/weixin">
+  <ion-tab title="微信" icon-off="ion-ios-chatbubble-outline" icon-on="ion-ios-chatbubble" badge-style="badge-assertive"
+           badge="2" href="#/wxtab/weixin">
     <ion-nav-view name="tab-weixin"></ion-nav-view>
   </ion-tab>
 
   <!--通讯录 Tab -->
-  <ion-tab title="通讯录" icon-off="iconfont icon-tongxunlu2" icon-on="iconfont icon-tongxunlu" href="">
-    <ion-nav-view name=""></ion-nav-view>
+  <ion-tab title="通讯录" icon-off="iconfont icon-tongxunlu2" icon-on="iconfont icon-tongxunlu" href="#/wxtab/addressbook">
+    <ion-nav-view name="tab-addressbook"></ion-nav-view>
   </ion-tab>
 
   <!--发现 Tab -->
-  <ion-tab title="发现" icon-off="iconfont icon-faxian" icon-on="iconfont icon-faxian1" href="">
-    <ion-nav-view name=""></ion-nav-view>
+  <ion-tab title="发现" icon-off="iconfont icon-faxian" icon-on="iconfont icon-faxian1" href="#/wxtab/find">
+    <ion-nav-view name="tab-find"></ion-nav-view>
   </ion-tab>
 
   <!--我的 Tab -->
-  <ion-tab title="我" icon-off="iconfont icon-wo1" icon-on="iconfont icon-wo" href="">
-    <ion-nav-view name="tab-wxaccount"></ion-nav-view>
+  <ion-tab title="我" icon-off="iconfont icon-wo1" icon-on="iconfont icon-wo" href="#/wxtab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
   </ion-tab>
 
 

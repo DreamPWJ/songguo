@@ -35,3 +35,102 @@
   font-size: 0.8rem;
   color: #9A9A9A;
 }
+
+#chatdetails ion-content {
+  padding-top: 1rem;
+}
+
+#chatdetails .time {
+  background-color: #CECECE;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+#chatdetails .row {
+  margin-top: 0.3rem;
+}
+
+#chatdetails .header {
+  width: 3rem !important;
+  height: 3rem !important;
+
+}
+
+#chatdetails .left {
+  position: relative;
+  background-color: #ffffff;
+  /*  border: 1px solid rgba(221, 221, 221, 0.5);*/
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+#chatdetails .left:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 8px solid #ffffff;
+  border-bottom: 5px solid transparent;
+}
+
+#chatdetails .right {
+  float: right;
+  position: relative;
+  background-color: #A0E75B;
+  /*  border: 1px solid rgba(221, 221, 221, 0.5);*/
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+#chatdetails .right:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 8px solid #A0E75B;
+  border-bottom: 5px solid transparent;
+}
+
+#chatdetails .fixed-bottom .iconfont {
+  font-size: 1.8rem !important;
+  color: #7F828B;
+}
+
+#chatdetails .fixed-bottom input {
+  margin-top: -0.5rem;
+  padding: 0 0.6rem;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+#chatdetails .add-more {
+  padding-top: 1rem;
+}
+
+#chatdetails .add-more span i {
+  padding: 0.6rem;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  border-radius: 5px;
+}
+
+#chatdetails .add-more span p {
+  margin-top: 1rem;
+}
+
+#addressbook .item-avatar {
+
+}

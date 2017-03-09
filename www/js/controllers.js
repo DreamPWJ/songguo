@@ -18,7 +18,7 @@ angular.module('starter.controllers', [])
     //在首页中清除导航历史退栈
     $scope.$on('$ionicView.afterEnter', function () {
       $ionicHistory.clearHistory();
-        StatusBar.backgroundColorByHexString("#1B82D1");
+      StatusBar.backgroundColorByHexString("#1B82D1");
     })
   })
 
@@ -53,5 +53,26 @@ angular.module('starter.controllers', [])
       StatusBar.backgroundColorByHexString("#393A3F");
     })
     CommonService.ionicPopover($scope, 'wxmain-popover.html');
+  })
+
+  //APP微信聊天界面
+  .controller('ChatDetailsCtrl', function ($scope, CommonService) {
+
+  })
+  //APP微信聊天属性设置
+  .controller('ChatSettingCtrl', function ($scope, CommonService) {
+
+  })
+  //APP微信通讯录主页面
+  .controller('AddressBookCtrl', function ($scope, CommonService) {
+
+  })
+  //APP微信发现主页面
+  .controller('FindCtrl', function ($scope, CommonService) {
+
+  })
+  //APP微信我的主页面
+  .controller('WXAccountCtrl', function ($scope, CommonService) {
+
   })
 //-------------------------------------微信控制器结束-----------------------------------------
