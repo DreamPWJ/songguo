@@ -2,29 +2,42 @@
   <ion-nav-bar class="bar-dark">
     <ion-nav-buttons side="right">
       <button class="button no-border icon ion-ios-search-strong  wx-header-right" ng-click=""></button>
-      <button class="button button-clear icon ion-android-add wx-header-right" ng-click="openPopover($event)"></button>
+      <button class="button button-clear icon ion-android-add wx-header-right" ui-sref="addchat" nav-direction=forward></button>
     </ion-nav-buttons>
   </ion-nav-bar>
 
   <ion-content overflow-scroll="false" class="stable-bg" id="addressbook" has-bouncing="true">
     <ion-list>
-      <a ng-href="#" nav-direction=forward class="item item-avatar">
+      <a ng-href="" nav-direction=forward class="item item-avatar">
         <img ng-src="img/weixin/addressbook/newfriend.png" alt="">
-        <h2 class="padding-top">新的朋友 </h2>
+        <h2 >新的朋友 </h2>
       </a>
-      <a ng-href="#" nav-direction=forward class="item item-avatar">
+      <a ng-href="" nav-direction=forward class="item item-avatar">
         <img ng-src="img/weixin/addressbook/groupchat.png" alt="">
-        <h2 class="padding-top">群聊 </h2>
+        <h2 >群聊 </h2>
       </a>
-      <a ng-href="#" nav-direction=forward class="item item-avatar">
+      <a ng-href="" nav-direction=forward class="item item-avatar">
         <img ng-src="img/weixin/addressbook/tag.png" alt="">
-        <h2 class="padding-top">标签 </h2>
+        <h2 >标签 </h2>
       </a>
-      <a ng-href="#" nav-direction=forward class="item item-avatar">
+      <a ng-href="" nav-direction=forward class="item item-avatar">
         <img ng-src="img/weixin/addressbook/officialaccounts.png" alt="">
-        <h2 class="padding-top">公众号 </h2>
+        <h2 >公众号 </h2>
       </a>
-
+      <p class="tag">A</p>
+      <a ng-href="#/chatdetails" nav-direction=forward class="item item-avatar">
+        <img ng-src="img/weixin/pan.jpg" alt="">
+        <h2 >阿甘</h2>
+      </a>
+      <p class="tag">D</p>
+      <a ng-href="#/chatdetails" nav-direction=forward class="item item-avatar">
+        <img ng-src="img/weixin/pan.jpg" alt="">
+        <h2 >Dream </h2>
+      </a>
+      <a ng-href="#/chatdetails" nav-direction=forward class="item item-avatar">
+        <img ng-src="img/weixin/pan.jpg" alt="">
+        <h2 >大提琴 </h2>
+      </a>
     </ion-list>
   </ion-content>
 

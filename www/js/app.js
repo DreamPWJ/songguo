@@ -273,6 +273,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         templateUrl: 'templates/weixin/chat/chatsetting.html',
         controller: 'ChatSettingCtrl'
       })
+
+      //APP微信钱包
+      .state('wallet', {
+        url: '/wallet',
+        templateUrl: 'templates/weixin/account/wallet.html',
+        controller: 'WalletCtrl'
+      })
+
+      //APP微信个人信息
+      .state('personalinfo', {
+        url: '/personalinfo',
+        templateUrl: 'templates/weixin/account/personalinfo.html',
+        controller: 'PersonalInfoCtrl'
+      })
+      //APP微信添加聊天对象
+      .state('addchat', {
+        url: '/addchat',
+        templateUrl: 'templates/weixin/addchat.html',
+        controller: 'AddChatCtrl'
+      })
 // -------------------------------------微信路由结束-----------------------------------------
 
 //-------------------------------------支付宝路由开始-----------------------------------------

@@ -132,5 +132,16 @@
 }
 
 #addressbook .item-avatar {
+  min-height: 54px !important;
+}
 
+#addressbook .item-avatar > img {
+  top: 6px;
+  bottom: 6px;
+}
+
+#addressbook .tag {
+  padding-top: 0.2rem;
+  padding-left: 1rem;
+  height: 0.8rem;
 }

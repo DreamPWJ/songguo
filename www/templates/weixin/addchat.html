@@ -1,0 +1,41 @@
+<ion-view title="添加聊天对象" id="addchat">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+
+  </ion-nav-bar>
+
+  <ion-tabs id="addchatlist-tab" class="tabs-light tabs-top  " delegate-handle="my-handle-addchatlistlist">
+    <div class="row row-horizontal-around text-center">
+      <span class="col-20 {{tabIndex==0?'active':''}}" ng-click="selectedTab(0)">添加朋友 </span>
+      <span class="col-20 {{tabIndex==1?'active':''}}" ng-click="selectedTab(1)">添加陌生人</span>
+      <span class="col-20 {{tabIndex==2?'active':''}}" ng-click="selectedTab(2)">添加群聊</span>
+    </div>
+
+  </ion-tabs>
+  <ion-slide-box show-pager="false" on-slide-changed="slideChanged($index)" delegate-handle="slidebox-addchatlist"
+                 id="addchatlist">
+    <ion-slide>
+      <ion-content overflow-scroll="false" class="has-tabs-top stable-bg" has-bouncing="true">
+
+        1
+      </ion-content>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-content overflow-scroll="false" class="has-tabs-top stable-bg" has-bouncing="true">
+        2
+
+      </ion-content>
+    </ion-slide>
+    <ion-slide>
+      <ion-content overflow-scroll="false" class="has-tabs-top stable-bg" has-bouncing="true">
+        3
+      </ion-content>
+    </ion-slide>
+  </ion-slide-box>
+
+
+</ion-view>
+

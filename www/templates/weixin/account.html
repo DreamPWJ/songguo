@@ -2,15 +2,51 @@
   <ion-nav-bar class="bar-dark">
     <ion-nav-buttons side="right">
       <button class="button no-border icon ion-ios-search-strong  wx-header-right" ng-click=""></button>
-      <button class="button button-clear icon ion-android-add wx-header-right" ng-click="openPopover($event)"></button>
+      <button class="button button-clear icon ion-android-add wx-header-right" ui-sref="addchat" nav-direction=forward></button>
     </ion-nav-buttons>
   </ion-nav-bar>
 
   <ion-content overflow-scroll="false" class="stable-bg" id="account" has-bouncing="true">
+   <p></p>
     <ion-list>
-      <a ng-href="#/chatdetails" nav-direction=forward class="item item-avatar">
-        <img ng-src="img/weixin/qian.jpg" alt="">
-        <h2>我的 <span class="item-note">13:06</span></h2>
+      <a ng-href="#/personalinfo" nav-direction=forward class="item item-avatar item-icon-right">
+        <img ng-src="img/weixin/pan.jpg" alt="">
+        <h2>Dream</h2>
+        <p>微信号 : Dream</p>
+        <i class="icon iconfont icon-qrcode grey"></i>
+      </a>
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-xiangce calm"></i>
+        <h2>相册</h2>
+      </a>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-shoucang calm"></i>
+        <h2>收藏</h2>
+      </a>
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <a ng-href="#wallet" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-qianbao calm"></i>
+        <h2>钱包</h2>
+      </a>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-qianbao calm"></i>
+        <h2>卡包</h2>
+      </a>
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-biaoqing energized"></i>
+        <h2>表情</h2>
+      </a>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-shezhi1 calm"></i>
+        <h2>设置</h2>
       </a>
     </ion-list>
   </ion-content>

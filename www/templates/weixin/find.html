@@ -2,15 +2,49 @@
   <ion-nav-bar class="bar-dark">
     <ion-nav-buttons side="right">
       <button class="button no-border icon ion-ios-search-strong  wx-header-right" ng-click=""></button>
-      <button class="button button-clear icon ion-android-add wx-header-right" ng-click="openPopover($event)"></button>
+      <button class="button button-clear icon ion-android-add wx-header-right" ui-sref="addchat" nav-direction=forward></button>
     </ion-nav-buttons>
   </ion-nav-bar>
 
   <ion-content overflow-scroll="false" class="stable-bg" id="find" has-bouncing="true">
+    <p></p>
     <ion-list>
-      <a ng-href="#/chatdetails" nav-direction=forward class="item item-avatar">
-        <img ng-src="img/weixin/qian.jpg" alt="">
-        <h2>发现 <span class="item-note">13:06</span></h2>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-friends balanced"></i>
+        <h2>朋友圈</h2>
+      </a>
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-saoyisao1 calm"></i>
+        <h2>扫一扫</h2>
+      </a>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-yaoyiyao calm"></i>
+        <h2>摇一摇</h2>
+      </a>
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-fujinderen calm"></i>
+        <h2>附近的人</h2>
+      </a>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-12 calm"></i>
+        <h2>漂流瓶</h2>
+      </a>
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-gouwu assertive"></i>
+        <h2>购物</h2>
+      </a>
+      <a ng-href="" nav-direction=forward class="item item-icon-left">
+        <i class="icon iconfont icon-youxi calm"></i>
+        <h2>游戏</h2>
       </a>
     </ion-list>
   </ion-content>

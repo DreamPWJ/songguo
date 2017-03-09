@@ -75,4 +75,25 @@ angular.module('starter.controllers', [])
   .controller('WXAccountCtrl', function ($scope, CommonService) {
 
   })
+  //APP微信钱包
+  .controller('WalletCtrl', function ($scope, CommonService) {
+
+  })
+  //APP微信个人信息
+  .controller('PersonalInfoCtrl', function ($scope, CommonService) {
+
+  })
+  //APP微信添加聊天对象
+  .controller('AddChatCtrl', function ($scope, CommonService,$ionicSlideBoxDelegate) {
+    $scope.tabIndex = 0;//当前tabs页
+    $scope.slideChanged = function (index) {
+      $scope.tabIndex = index;
+    };
+
+    $scope.selectedTab = function (index) {
+      $scope.tabIndex = index;
+      //滑动的索引和速度
+      $ionicSlideBoxDelegate.$getByHandle("slidebox-addchatlist").slide(index)
+    }
+  })
 //-------------------------------------微信控制器结束-----------------------------------------
