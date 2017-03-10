@@ -15,9 +15,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         // org.apache.cordova.statusbar required
         if ($ionicPlatform.is('ios')) {
           StatusBar.styleLightContent();
+          $rootScope.isPlatform = "ios";
         }
         if ($ionicPlatform.is('android')) {
           StatusBar.backgroundColorByHexString("#1B82D1");
+          $rootScope.isPlatform = "android";
         }
 
       }
@@ -171,10 +173,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         abstract: true,
         templateUrl: 'templates/tabs.html'
       })
+
       .state('wxtab', { //微信tabs
         url: '/wxtab',
         abstract: true,
         templateUrl: 'templates/weixin/wxtabs.html'
+      })
+
+      .state('alitabs', { //支付宝tabs
+        url: '/alitabs',
+        abstract: true,
+        templateUrl: 'templates/alipay/alitabs.html'
       })
       // Each tab has its own nav history stack:
 
@@ -315,10 +324,40 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         templateUrl: 'templates/weixin/account/recharge.html',
         controller: 'RechargeCtrl'
       })
-// -------------------------------------微信路由结束-----------------------------------------
 
-//-------------------------------------支付宝路由开始-----------------------------------------
+      //APP微信提现
+      .state('withdraw', {
+        url: '/withdraw',
+        templateUrl: 'templates/weixin/account/withdraw.html',
+        controller: 'WithdrawCtrl'
+      })
 
+      //APP微信选择银行卡
+      .state('bankcard', {
+        url: '/bankcard',
+        templateUrl: 'templates/weixin/account/bankcard.html',
+        controller: 'BankCardCtrl'
+      })
+
+      //APP微信支付列表
+      .state('wxpaylist', {
+        url: '/wxpaylist',
+        templateUrl: 'templates/weixin/pay/wxpaylist.html',
+        controller: 'WxPayListCtrl'
+      })
+      // -------------------------------------微信路由结束-----------------------------------------
+
+      //-------------------------------------支付宝路由开始-----------------------------------------
+      //APP支付宝首页面
+      .state('alitabs.alipay', {
+        url: '/alipay',
+        views: {
+          'tab-home': {
+            templateUrl: 'templates/alipay/alipay.html',
+            controller: 'AliPayCtrl'
+          }
+        }
+      })
 // -------------------------------------支付宝路由结束-----------------------------------------
 // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/main');

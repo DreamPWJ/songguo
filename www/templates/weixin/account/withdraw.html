@@ -1,0 +1,38 @@
+<ion-view title="零钱提现">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <button class="button button-clear icon ion-ios-help-outline" ui-sref="bankcard" ></button>
+
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content overflow-scroll="false" class="stable-bg" id="withdraw" has-bouncing="true">
+    <div class="padding light-bg">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          到账银行卡
+        </div>
+        <select>
+          <option>中国银行(0256)</option>
+          <option selected>建设银行(0257)</option>
+          <option>工商银行(0258)</option>
+        </select>
+      </label>
+      <ion-item ui-sref="bankcard">
+        <h2>银行卡 <span class="item-note positive">建设银行(0257)</span></h2>
+      </ion-item>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">提现金额</span>
+        <input type="text" placeholder="￥">
+      </label>
+    </div>
+    <div class="padding">
+      <a ng-click="" ng-disabled="true" class="button weixin-balanced-bg full-image ">提现</a>
+    </div>
+  </ion-content>
+
+</ion-view>
+

@@ -1,0 +1,21 @@
+<ion-view title="选择银行卡">
+  <ion-nav-bar class="bar-dark">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+
+  </ion-nav-bar>
+
+  <ion-content overflow-scroll="false" class="stable-bg" id="bankcard" has-bouncing="true">
+     <ion-list>
+       <ion-item class="item-divider">
+         到账银行
+       </ion-item>
+       <ion-radio ng-model="bankcard" ng-value="'A'"  icon="ion-android-done">中国银行(0256)</ion-radio>
+       <ion-radio ng-model="bankcard" ng-value="'B'"  icon="ion-android-done">建设银行(0257)</ion-radio>
+       <ion-radio ng-model="bankcard" ng-value="'C'"  icon="ion-android-done">工商银行(0258)</ion-radio>
+     </ion-list>
+  </ion-content>
+
+</ion-view>
+

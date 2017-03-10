@@ -97,7 +97,7 @@ angular.module('starter.controllers', [])
     }
   })
   //APP微信新的朋友
-  .controller('AddFriendCtrl', function ($scope, CommonService,$ionicActionSheet) {
+  .controller('AddFriendCtrl', function ($scope, CommonService, $ionicActionSheet) {
     $scope.addFriend = function () {//添加朋友
       $ionicActionSheet.show({
         cssClass: '',
@@ -149,4 +149,29 @@ angular.module('starter.controllers', [])
   .controller('RechargeCtrl', function ($scope, CommonService) {
 
   })
-//-------------------------------------微信控制器结束-----------------------------------------
+
+  //APP微信提现
+  .controller('WithdrawCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP微信选择银行卡
+  .controller('BankCardCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP微信支付列表
+  .controller('WxPayListCtrl', function ($scope, CommonService) {
+
+  })
+  //-------------------------------------微信控制器结束-----------------------------------------
+
+  //-------------------------------------支付宝控制器开始-----------------------------------------
+  //APP支付宝首页面
+  .controller('AliPayCtrl', function ($scope, CommonService) {
+    $scope.$on('$ionicView.afterEnter', function () {
+      StatusBar.backgroundColorByHexString("#1B82D1");
+    })
+  })
+
+//-------------------------------------支付宝控制器结束-----------------------------------------

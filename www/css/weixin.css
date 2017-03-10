@@ -7,6 +7,14 @@
   background-color: #393A3F !important;
 }
 
+.weixin-balanced{
+  color: #1AAC19!important;
+}
+
+.weixin-balanced-bg {
+  color: #ffffff !important;
+  background-color: #1AAC19 !important;
+}
 .tabs-color-active-balanced .iconfont {
   padding-top: 0.6rem;
 }
@@ -40,7 +48,7 @@
   padding-top: 1rem;
 }
 
-#chatdetails .time {
+.time  {
   background-color: #CECECE;
   padding: 0.3rem 0.5rem;
   border-radius: 5px;
@@ -182,4 +190,8 @@
   width: 7rem;
   height: 7rem;
   margin: 0 auto;
+}
+
+#bankcard .radio-icon {
+  color: #1AAC19;
 }
