@@ -18,7 +18,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           $rootScope.isPlatform = "ios";
         }
         if ($ionicPlatform.is('android')) {
-          StatusBar.backgroundColorByHexString("#1B82D1");
+          StatusBar.backgroundColorByHexString("#1983D1");
           $rootScope.isPlatform = "android";
         }
 
@@ -237,6 +237,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           }
         }
       })
+
       //APP微信通讯录主页面
       .state('wxtab.addressbook', {
         url: '/addressbook',
@@ -358,6 +359,47 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
           }
         }
       })
+
+      //APP支付宝口碑
+      .state('alitabs.koubei', {
+        url: '/koubei',
+        views: {
+          'tab-koubei': {
+            templateUrl: 'templates/alipay/koubei.html',
+            controller: 'KouBeiCtrl'
+          }
+        }
+      })
+
+      //APP支付宝朋友
+      .state('alitabs.friend', {
+        url: '/friend',
+        views: {
+          'tab-friend': {
+            templateUrl: 'templates/alipay/friend.html',
+            controller: 'FriendCtrl'
+          }
+        }
+      })
+
+      //APP支付宝我的
+      .state('alitabs.account', {
+        url: '/account',
+        views: {
+          'tab-aliaccount': {
+            templateUrl: 'templates/alipay/account.html',
+            controller: 'AliAccountCtrl'
+          }
+        }
+      })
+
+      //APP付宝添加聊天对象
+      .state('aliaddchat', {
+        url: '/aliaddchat',
+        templateUrl: 'templates/alipay/aliaddchat.html',
+        controller: 'AliAddChatCtrl'
+      })
+
 // -------------------------------------支付宝路由结束-----------------------------------------
 // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/main');

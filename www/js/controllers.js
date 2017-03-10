@@ -170,8 +170,36 @@ angular.module('starter.controllers', [])
   //APP支付宝首页面
   .controller('AliPayCtrl', function ($scope, CommonService) {
     $scope.$on('$ionicView.afterEnter', function () {
-      StatusBar.backgroundColorByHexString("#1B82D1");
+      StatusBar.backgroundColorByHexString("#1983D1");
     })
   })
 
+  //APP支付宝口碑
+  .controller('KouBeiCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝朋友
+  .controller('FriendCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝我的
+  .controller('AliAccountCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP付宝添加聊天对象
+  .controller('AliAddChatCtrl', function ($scope, CommonService,$ionicSlideBoxDelegate) {
+    $scope.tabIndex = 0;//当前tabs页
+    $scope.slideChanged = function (index) {
+      $scope.tabIndex = index;
+    };
+
+    $scope.selectedTab = function (index) {
+      $scope.tabIndex = index;
+      //滑动的索引和速度
+      $ionicSlideBoxDelegate.$getByHandle("slidebox-aliaddchatlist").slide(index)
+    }
+  })
 //-------------------------------------支付宝控制器结束-----------------------------------------
