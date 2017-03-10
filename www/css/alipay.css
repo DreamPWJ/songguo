@@ -1,0 +1,90 @@
+#alichatdetails ion-content {
+  padding-top: 1rem;
+}
+
+
+
+#alichatdetails .row {
+  margin-top: 0.3rem;
+}
+
+#alichatdetails .header {
+  width: 3rem !important;
+  height: 3rem !important;
+
+}
+
+#alichatdetails .left {
+  position: relative;
+  background-color: #ffffff;
+  /*  border: 1px solid rgba(221, 221, 221, 0.5);*/
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+
+#alichatdetails .left:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 8px solid #ffffff;
+  border-bottom: 5px solid transparent;
+}
+
+#alichatdetails .right {
+  float: right;
+  position: relative;
+  background-color: #1983D1;
+  /*  border: 1px solid rgba(221, 221, 221, 0.5);*/
+  border-radius: 6px;
+  padding: 0.8rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+#alichatdetails .right:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 8px solid #1983D1;
+  border-bottom: 5px solid transparent;
+}
+
+#alichatdetails .fixed-bottom .iconfont {
+  font-size: 1.8rem !important;
+  color: #7F828B;
+}
+
+#alichatdetails .fixed-bottom input {
+  margin-top: -0.5rem;
+  padding: 0 0.6rem;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+}
+
+#alichatdetails .add-more {
+  padding-top: 1rem;
+}
+
+#alichatdetails .add-more span i {
+  padding: 0.6rem;
+  border: 1px solid rgba(221, 221, 221, 0.5);
+  border-radius: 5px;
+}
+
+#alichatdetails .add-more span p {
+  margin-top: 1rem;
+}

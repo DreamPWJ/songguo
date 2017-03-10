@@ -393,13 +393,54 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         }
       })
 
-      //APP付宝添加聊天对象
+      //APP支付宝添加聊天对象
       .state('aliaddchat', {
         url: '/aliaddchat',
         templateUrl: 'templates/alipay/aliaddchat.html',
         controller: 'AliAddChatCtrl'
       })
 
+      //APP支付宝个人中心
+      .state('personalcenter', {
+        url: '/personalcenter',
+        templateUrl: 'templates/alipay/account/personalcenter.html',
+        controller: 'PersonalCenterCtrl'
+      })
+
+      //APP支付宝个人设置
+      .state('alisetting', {
+        url: '/alisetting',
+        templateUrl: 'templates/alipay/account/alisetting.html',
+        controller: 'AliSettingCtrl'
+      })
+
+      //APP支付宝账单列表
+      .state('bill', {
+        url: '/bill',
+        templateUrl: 'templates/alipay/account/bill.html',
+        controller: 'BillCtrl'
+      })
+
+      //APP支付宝余额
+      .state('balance', {
+        url: '/balance',
+        templateUrl: 'templates/alipay/account/balance.html',
+        controller: 'BalanceCtrl'
+      })
+
+      //APP支付宝聊天页面
+      .state('alichatdetails', {
+        url: '/alichatdetails',
+        templateUrl: 'templates/alipay/chat/alichatdetails.html',
+        controller: 'AliChatDetailsCtrl'
+      })
+
+      //APP支付宝提现
+      .state('aliwithdraw', {
+        url: '/aliwithdraw',
+        templateUrl: 'templates/alipay/account/aliwithdraw.html',
+        controller: 'AliWithdrawCtrl'
+      })
 // -------------------------------------支付宝路由结束-----------------------------------------
 // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/tab/main');

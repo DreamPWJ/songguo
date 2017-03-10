@@ -190,7 +190,7 @@ angular.module('starter.controllers', [])
   })
 
   //APP付宝添加聊天对象
-  .controller('AliAddChatCtrl', function ($scope, CommonService,$ionicSlideBoxDelegate) {
+  .controller('AliAddChatCtrl', function ($scope, CommonService, $ionicSlideBoxDelegate) {
     $scope.tabIndex = 0;//当前tabs页
     $scope.slideChanged = function (index) {
       $scope.tabIndex = index;
@@ -201,5 +201,35 @@ angular.module('starter.controllers', [])
       //滑动的索引和速度
       $ionicSlideBoxDelegate.$getByHandle("slidebox-aliaddchatlist").slide(index)
     }
+  })
+
+  //APP支付宝个人中心
+  .controller('PersonalCenterCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝个人设置
+  .controller('AliSettingCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝账单列表
+  .controller('BillCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝余额
+  .controller('BalanceCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝聊天页面
+  .controller('AliChatDetailsCtrl', function ($scope, CommonService) {
+
+  })
+
+  //APP支付宝提现
+  .controller('AliWithdrawCtrl', function ($scope, CommonService) {
+
   })
 //-------------------------------------支付宝控制器结束-----------------------------------------

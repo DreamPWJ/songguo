@@ -1,0 +1,51 @@
+<ion-view title="设置" id="alisetting">
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-ios-arrow-left" ng-click="$ionicGoBack()"></button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+
+  <ion-content overflow-scroll="false" class="stable-bg " has-bouncing="true">
+    <p></p>
+    <ion-list>
+      <ion-item class="item-avatar-right item-icon-right">
+        <img ng-src="img/weixin/pan.jpg" alt="头像">
+        <h2 class="padding-top">头像</h2>
+        <!--    <i class="icon ion-ios-arrow-right"></i>-->
+      </ion-item>
+      <ion-item class="item-input">
+        <span class="input-label">昵称</span>
+        <input type="text" class="text-right" placeholder="我的示例名字">
+      </ion-item>
+      <ion-item class="item-input">
+        <span class="input-label">真实姓名</span>
+        <input type="text" class="text-right" placeholder="示例真实姓名">
+      </ion-item>
+
+      <ion-item class="item-input">
+        <span class="input-label">支付宝账号</span>
+        <input type="text" class="text-right" placeholder="130000000000">
+      </ion-item>
+      <ion-item class="item-input">
+        <span class="input-label">会员等级</span>
+        <input type="text" class="text-right" placeholder="铂金会员">
+      </ion-item>
+      <ion-item class=" item-icon-right">
+        <h2>清空聊天记录</h2>
+        <i class="icon ion-ios-arrow-right"></i>
+      </ion-item>
+
+    </ion-list>
+    <p></p>
+    <ion-list>
+      <ion-toggle ng-model="a" toggle-class="toggle-balanced">显示网商贷</ion-toggle>
+      <ion-toggle ng-model="b" toggle-class="toggle-balanced">显示蚂蚁花呗</ion-toggle>
+      <ion-toggle ng-model="c" toggle-class="toggle-balanced">显示网上银行</ion-toggle>
+    </ion-list>
+    <div class="padding">
+      <button class="button button-light button-full">退出</button>
+    </div>
+  </ion-content>
+
+</ion-view>
+
