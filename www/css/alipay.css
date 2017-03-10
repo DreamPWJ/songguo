@@ -88,3 +88,14 @@
 #alichatdetails .add-more span p {
   margin-top: 1rem;
 }
+
+#balance .balance-show{
+  padding-top: 2rem;
+  height: 10rem;
+}
+
+#balance .balance-show h1{
+  padding-left: 0.5rem;
+  font-size: 3rem;
+  color: #ffffff;
+}

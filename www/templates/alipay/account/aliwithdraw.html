@@ -1,33 +1,32 @@
 <ion-view title="提现">
   <ion-nav-bar class="bar-light">
     <ion-nav-buttons side="left">
-      <button class="button button-clear button-positive icon ion-ios-arrow-left positive" ng-click="$ionicGoBack()"></button>
+      <button class="button button-clear button-positive icon ion-ios-arrow-left positive"
+              ng-click="$ionicGoBack()"></button>
     </ion-nav-buttons>
     <ion-nav-buttons side="right">
-      <button class="button button-clear icon ion-ios-help-outline button-positive " ></button>
+      <button class="button button-clear icon ion-ios-help-outline button-positive "></button>
 
     </ion-nav-buttons>
   </ion-nav-bar>
 
   <ion-content overflow-scroll="false" class="stable-bg" id="aliwithdraw" has-bouncing="true">
-    <div class=" light-bg">
-      <label class="item item-input item-select">
-        <div class="input-label">
-          到账银行卡
-        </div>
-        <select>
-          <option>中国银行(0256)</option>
-          <option selected>建设银行(0257)</option>
-          <option>工商银行(0258)</option>
-        </select>
-      </label>
-      <ion-item ui-sref="bankcard">
-        <h2>银行卡 <span class="item-note positive">建设银行(0257)</span></h2>
-      </ion-item>
+    <p></p>
+    <ion-list>
+      <a ng-href="" nav-direction="forward" class="item item-icon-left item-icon-right">
+        <i class="icon iconfont icon-xianxiashoukuan energized"></i>
+        <h2>中国银行 </h2>
+        <p>尾号6666 储蓄卡</p>
+        <i class="icon ion-ios-arrow-right"></i>
+      </a>
+    </ion-list>
+    <p></p>
+    <div class="light-bg">
       <label class="item item-input item-stacked-label">
         <span class="input-label">提现金额</span>
         <input type="text" placeholder="￥">
       </label>
+      <p class="padding grey">可用余额 0.00元</p>
     </div>
     <div class="padding">
       <a ng-click="" ng-disabled="true" class="button button-calm full-image ">两个小时内到账,确认提现</a>
