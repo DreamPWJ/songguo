@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.config', 'starter.directive', 'starter.filter', 'ngCordova'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'starter.config', 'starter.directive', 'starter.filter', 'ngCordova', 'ionic-native-transitions'])
 
   .run(function ($ionicPlatform, $rootScope, $location, $ionicHistory, $cordovaToast, $cordovaNetwork, CommonService) {
     $ionicPlatform.ready(function () {
@@ -116,7 +116,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     });
   })
 
-  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider,$ionicNativeTransitionsProvider) {
     /* 设置平台特性*/
     $ionicConfigProvider.platform.ios.tabs.style('standard');
     $ionicConfigProvider.platform.ios.tabs.position('bottom');
@@ -141,7 +141,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     //Toggle item style. Android defaults to small and iOS defaults to large.
     $ionicConfigProvider.form.toggle('large');
     //原生动画效果统一配置
-    /*    $ionicNativeTransitionsProvider.setDefaultOptions({
+      $ionicNativeTransitionsProvider.setDefaultOptions({
      duration: 200, // in milliseconds (ms), default 400,
      slowdownfactor: 4, // overlap views (higher number is more) or no overlap (1), default 4
      iosdelay: -1, // ms to wait for the iOS webview to update before animation kicks in, default -1
@@ -159,7 +159,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
      $ionicNativeTransitionsProvider.setDefaultBackTransition({
      type: 'slide',
      direction: 'right'
-     });*/
+     });
 
     // Ionic uses AngularUI Router which uses the concept of states
     // Learn more here: https://github.com/angular-ui/ui-router
@@ -230,6 +230,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP微信首页面
       .state('wxtab.weixin', {
         url: '/weixin',
+        nativeTransitions: null,
         views: {
           'tab-weixin': {
             templateUrl: 'templates/weixin/weixin.html',
@@ -241,6 +242,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP微信通讯录主页面
       .state('wxtab.addressbook', {
         url: '/addressbook',
+        nativeTransitions: null,
         views: {
           'tab-addressbook': {
             templateUrl: 'templates/weixin/addressbook.html',
@@ -252,6 +254,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP微信发现主页面
       .state('wxtab.find', {
         url: '/find',
+        nativeTransitions: null,
         views: {
           'tab-find': {
             templateUrl: 'templates/weixin/find.html',
@@ -263,6 +266,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP微信我的主页面
       .state('wxtab.account', {
         url: '/account',
+        nativeTransitions: null,
         views: {
           'tab-account': {
             templateUrl: 'templates/weixin/account.html',
@@ -352,6 +356,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP支付宝首页面
       .state('alitabs.alipay', {
         url: '/alipay',
+        nativeTransitions: null,
         views: {
           'tab-home': {
             templateUrl: 'templates/alipay/alipay.html',
@@ -363,6 +368,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP支付宝口碑
       .state('alitabs.koubei', {
         url: '/koubei',
+        nativeTransitions: null,
         views: {
           'tab-koubei': {
             templateUrl: 'templates/alipay/koubei.html',
@@ -374,6 +380,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP支付宝朋友
       .state('alitabs.friend', {
         url: '/friend',
+        nativeTransitions: null,
         views: {
           'tab-friend': {
             templateUrl: 'templates/alipay/friend.html',
@@ -385,6 +392,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       //APP支付宝我的
       .state('alitabs.account', {
         url: '/account',
+        nativeTransitions: null,
         views: {
           'tab-aliaccount': {
             templateUrl: 'templates/alipay/account.html',

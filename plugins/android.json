@@ -7,31 +7,22 @@
         "files": {}
     },
     "installed_plugins": {
+        "com.telerik.plugins.nativepagetransitions": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.ionicframework.songguo"
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "com.ionicframework.songguo"
         },
-        "cordova-plugin-splashscreen": {
+        "cordova-plugin-file-opener2": {
             "PACKAGE_NAME": "com.ionicframework.songguo"
         },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-x-toast": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-screen-orientation": {
+        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.ionicframework.songguo"
         },
         "cordova-plugin-geolocation": {
@@ -43,16 +34,28 @@
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.ionicframework.songguo"
         },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.songguo"
+        },
         "phonegap-plugin-barcodescanner": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.ionicframework.songguo"
-        },
-        "cordova-plugin-file-opener2": {
             "PACKAGE_NAME": "com.ionicframework.songguo"
         }
     },
